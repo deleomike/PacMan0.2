@@ -1,0 +1,4 @@
+verilog xil_defaultlib "../../../../Week12Demo.srcs/sources_1/ip/PxlClkGen/PxlClkGen_clk_wiz.v" --include "../../../ipstatic"
+verilog xil_defaultlib "../../../../Week12Demo.srcs/sources_1/ip/PxlClkGen/PxlClkGen.v" --include "../../../ipstatic"
+verilog xil_defaultlib "glbl.v"
+nosort

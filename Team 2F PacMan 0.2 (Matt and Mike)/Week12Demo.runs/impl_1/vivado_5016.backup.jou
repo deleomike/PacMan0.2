@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Dec  6 16:57:16 2017
+# Process ID: 5016
+# Current directory: F:/VGA/Final Project 371/Week12Demo.runs/impl_1
+# Command line: vivado.exe -log Nexys4DdrUserDemo_optimizedAbdallah.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nexys4DdrUserDemo_optimizedAbdallah.tcl -notrace
+# Log file: F:/VGA/Final Project 371/Week12Demo.runs/impl_1/Nexys4DdrUserDemo_optimizedAbdallah.vdi
+# Journal file: F:/VGA/Final Project 371/Week12Demo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Nexys4DdrUserDemo_optimizedAbdallah.tcl -notrace

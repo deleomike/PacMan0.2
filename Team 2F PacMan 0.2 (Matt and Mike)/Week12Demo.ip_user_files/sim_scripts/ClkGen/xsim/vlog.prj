@@ -1,0 +1,4 @@
+verilog xil_defaultlib "../../../../Week12Demo.srcs/sources_1/ip/ClkGen/ClkGen_clk_wiz.v" --include "../../../../Week12Demo.srcs/sources_1/ip/ClkGen" --include "../../../../Week12Demo.srcs/sources_1/ip/PxlClkGen"
+verilog xil_defaultlib "../../../../Week12Demo.srcs/sources_1/ip/ClkGen/ClkGen.v" --include "../../../../Week12Demo.srcs/sources_1/ip/ClkGen" --include "../../../../Week12Demo.srcs/sources_1/ip/PxlClkGen"
+verilog xil_defaultlib "glbl.v"
+nosort

@@ -1,0 +1,838 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Dec  6 18:28:55 2017
+# Process ID: 6748
+# Current directory: E:/VGA/Final Project 371/Week12Demo.runs/synth_1
+# Command line: vivado.exe -log Nexys4DdrUserDemo_optimizedAbdallah.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys4DdrUserDemo_optimizedAbdallah.tcl
+# Log file: E:/VGA/Final Project 371/Week12Demo.runs/synth_1/Nexys4DdrUserDemo_optimizedAbdallah.vds
+# Journal file: E:/VGA/Final Project 371/Week12Demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Nexys4DdrUserDemo_optimizedAbdallah.tcl -notrace
+Command: synth_design -top Nexys4DdrUserDemo_optimizedAbdallah -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'ClkGen' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:nexys4_ddr:part0:1.1' and the board 'unset' used to customize the IP 'ClkGen' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'PxlClkGen' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:nexys4_ddr:part0:1.1' and the board 'unset' used to customize the IP 'PxlClkGen' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6108 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 358.609 ; gain = 74.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys4DdrUserDemo_optimizedAbdallah' [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:149]
+INFO: [Synth 8-3491] module 'ClkGen' declared at 'E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/realtime/ClkGen_stub.vhdl:5' bound to instance 'Inst_ClkGen' of component 'ClkGen' [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'ClkGen' [E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/realtime/ClkGen_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Vgaformouseonly' declared at 'E:/VGA/Final Project 371/VgaForMouseOnly.vhd:70' bound to instance 'Inst_VGA' of component 'Vgaformouseonly' [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'Vgaformouseonly' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:87]
+WARNING: [Synth 8-614] signal 'C1enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'cnt1' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C5enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C8enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C2enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C4enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C9enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C3enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C6enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+WARNING: [Synth 8-614] signal 'C7enable' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:611]
+INFO: [Synth 8-3491] module 'WhiteBox' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:12' bound to instance 'Inst_WB' of component 'WhiteBox' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'WhiteBox' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:42]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:534]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:529]
+WARNING: [Synth 8-6014] Unused sequential element xdiff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:530]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:537]
+WARNING: [Synth 8-6014] Unused sequential element ydiff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:538]
+INFO: [Synth 8-256] done synthesizing module 'WhiteBox' (1#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:42]
+INFO: [Synth 8-3491] module 'CoinDisplay' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:12' bound to instance 'Inst_Coin_1' of component 'CoinDisplay' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:773]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay' (2#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay2' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:12' bound to instance 'Inst_Coin_2' of component 'CoinDisplay2' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:793]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay2' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay2' (3#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay3' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:12' bound to instance 'Inst_Coin_3' of component 'CoinDisplay3' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:814]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay3' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay3' (4#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay4' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:12' bound to instance 'Inst_Coin_4' of component 'CoinDisplay4' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay4' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay4' (5#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay5' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:12' bound to instance 'Inst_Coin_5' of component 'CoinDisplay5' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:856]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay5' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay5' (6#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay6' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:12' bound to instance 'Inst_Coin_6' of component 'CoinDisplay6' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:877]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay6' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay6' (7#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay7' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:12' bound to instance 'Inst_Coin_7' of component 'CoinDisplay7' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:898]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay7' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay7' (8#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay8' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:12' bound to instance 'Inst_Coin_8' of component 'CoinDisplay8' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:919]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay8' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay8' (9#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:43]
+INFO: [Synth 8-3491] module 'CoinDisplay9' declared at 'E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:12' bound to instance 'Inst_Coin_9' of component 'CoinDisplay9' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:940]
+INFO: [Synth 8-638] synthesizing module 'CoinDisplay9' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:43]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'CoinDisplay9' (10#1) [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:43]
+INFO: [Synth 8-3491] module 'PxlClkGen' declared at 'E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/realtime/PxlClkGen_stub.vhdl:5' bound to instance 'Inst_PxlClkGen' of component 'PxlClkGen' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:968]
+INFO: [Synth 8-638] synthesizing module 'PxlClkGen' [E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/realtime/PxlClkGen_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'MouseDisplay' declared at 'E:/VGA/Final Project 371/MouseDisplay.vhd:99' bound to instance 'Inst_MouseDisplay' of component 'MouseDisplay' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:1069]
+INFO: [Synth 8-638] synthesizing module 'MouseDisplay' [E:/VGA/Final Project 371/MouseDisplay.vhd:129]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [E:/VGA/Final Project 371/MouseDisplay.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/MouseDisplay.vhd:192]
+WARNING: [Synth 8-6014] Unused sequential element temp_diff_reg was removed.  [E:/VGA/Final Project 371/MouseDisplay.vhd:200]
+INFO: [Synth 8-256] done synthesizing module 'MouseDisplay' (11#1) [E:/VGA/Final Project 371/MouseDisplay.vhd:129]
+INFO: [Synth 8-3491] module 'OverlayCtl' declared at 'E:/OverlayCtl.vhd:35' bound to instance 'Inst_OverlayCtrl' of component 'OverlayCtl' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:1088]
+INFO: [Synth 8-638] synthesizing module 'OverlayCtl' [E:/OverlayCtl.vhd:43]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [E:/OverlayCtl.vhd:57]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [E:/OverlayCtl.vhd:266]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [E:/OverlayCtl.vhd:476]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [E:/OverlayCtl.vhd:685]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [E:/OverlayCtl.vhd:896]
+INFO: [Synth 8-256] done synthesizing module 'OverlayCtl' (12#1) [E:/OverlayCtl.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element MOUSE_LEFT_BUTTON_REG_reg was removed.  [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:1052]
+INFO: [Synth 8-256] done synthesizing module 'Vgaformouseonly' (13#1) [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:87]
+INFO: [Synth 8-3491] module 'Score_Display' declared at 'E:/VGA/Final Project 371/Score_Display.vhd:35' bound to instance 'ScoreDisp' of component 'score_display' [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:651]
+INFO: [Synth 8-638] synthesizing module 'Score_Display' [E:/VGA/Final Project 371/Score_Display.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element counting_reg was removed.  [E:/VGA/Final Project 371/Score_Display.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Score_Display' (14#1) [E:/VGA/Final Project 371/Score_Display.vhd:52]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2keyboard' declared at 'E:/VGA/Final Project 371/ps2keyboardXYCoords.vhd:26' bound to instance 'UUT1' of component 'ps2keyboard' [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:661]
+INFO: [Synth 8-638] synthesizing module 'ps2keyboard' [E:/VGA/Final Project 371/ps2keyboardXYCoords.vhd:38]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'E:/VGA/Final Project 371/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [E:/VGA/Final Project 371/ps2keyboardXYCoords.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'debounce' [E:/VGA/Final Project 371/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (15#1) [E:/VGA/Final Project 371/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'E:/VGA/Final Project 371/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [E:/VGA/Final Project 371/ps2keyboardXYCoords.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'ps2keyboard' (16#1) [E:/VGA/Final Project 371/ps2keyboardXYCoords.vhd:38]
+INFO: [Synth 8-3491] module 'FinalConverter2' declared at 'E:/VGA/Final Project 371/ConverterXY.vhd:6' bound to instance 'UUT2' of component 'FinalConverter2' [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:669]
+INFO: [Synth 8-638] synthesizing module 'FinalConverter2' [E:/VGA/Final Project 371/ConverterXY.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'FinalConverter2' (17#1) [E:/VGA/Final Project 371/ConverterXY.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4DdrUserDemo_optimizedAbdallah' (18#1) [E:/VGA/Final Project 371/Nexys4DdrUserDemo_OptimizedAbdallah.vhd:149]
+WARNING: [Synth 8-3331] design Score_Display has unconnected port CLK100MHZ
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:10 ; elapsed = 00:02:50 . Memory (MB): peak = 1405.051 ; gain = 1121.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:15 ; elapsed = 00:03:26 . Memory (MB): peak = 1405.051 ; gain = 1121.020
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/dcp5/ClkGen_in_context.xdc] for cell 'Inst_ClkGen'
+Finished Parsing XDC File [E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/dcp5/ClkGen_in_context.xdc] for cell 'Inst_ClkGen'
+Parsing XDC File [E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/dcp7/PxlClkGen_in_context.xdc] for cell 'Inst_VGA/Inst_PxlClkGen'
+Finished Parsing XDC File [E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/dcp7/PxlClkGen_in_context.xdc] for cell 'Inst_VGA/Inst_PxlClkGen'
+Parsing XDC File [E:/VGA/Final Project 371/Nexys4DDR_C.xdc]
+Finished Parsing XDC File [E:/VGA/Final Project 371/Nexys4DDR_C.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VGA/Final Project 371/Nexys4DDR_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4DdrUserDemo_optimizedAbdallah_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4DdrUserDemo_optimizedAbdallah_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1405.051 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:37 ; elapsed = 00:04:30 . Memory (MB): peak = 1405.051 ; gain = 1121.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:37 ; elapsed = 00:04:31 . Memory (MB): peak = 1405.051 ; gain = 1121.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_i. (constraint file  {E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/dcp5/ClkGen_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_i. (constraint file  {E:/VGA/Final Project 371/Week12Demo.runs/synth_1/.Xil/Vivado-6748-E8WLAB5130/dcp5/ClkGen_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for Inst_ClkGen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Inst_VGA/Inst_PxlClkGen. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:37 ; elapsed = 00:04:31 . Memory (MB): peak = 1405.051 ; gain = 1121.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'green_outWB_reg[3:0]' into 'red_outWB_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:575]
+INFO: [Synth 8-4471] merging register 'blue_outWB_reg[3:0]' into 'red_outWB_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:576]
+WARNING: [Synth 8-6014] Unused sequential element green_outWB_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:575]
+WARNING: [Synth 8-6014] Unused sequential element blue_outWB_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/WhiteBox.vhd:576]
+INFO: [Synth 8-4471] merging register 'blue_out_reg[3:0]' into 'green_out_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:158]
+WARNING: [Synth 8-6014] Unused sequential element blue_out_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay.vhd:158]
+INFO: [Synth 8-4471] merging register 'blue_out2_reg[3:0]' into 'green_out2_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out2_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay2.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out3_reg[3:0]' into 'green_out3_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out3_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay3.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out4_reg[3:0]' into 'green_out4_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out4_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay4.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out5_reg[3:0]' into 'green_out5_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out5_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay5.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out6_reg[3:0]' into 'green_out6_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out6_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay6.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out7_reg[3:0]' into 'green_out7_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out7_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay7.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out8_reg[3:0]' into 'green_out8_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:157]
+WARNING: [Synth 8-6014] Unused sequential element blue_out8_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay8.vhd:157]
+INFO: [Synth 8-4471] merging register 'blue_out9_reg[3:0]' into 'green_out9_reg[3:0]' [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element blue_out9_reg was removed.  [E:/VGA/Final Project 371/Week12Demo.srcs/sources_1/new/CoinDisplay9.vhd:156]
+INFO: [Synth 8-4471] merging register 'blue_out_reg[3:0]' into 'green_out_reg[3:0]' [E:/VGA/Final Project 371/MouseDisplay.vhd:239]
+WARNING: [Synth 8-6014] Unused sequential element blue_out_reg was removed.  [E:/VGA/Final Project 371/MouseDisplay.vhd:239]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/VGA/Final Project 371/MouseDisplay.vhd:213]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/VGA/Final Project 371/MouseDisplay.vhd:214]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/VGA/Final Project 371/MouseDisplay.vhd:213]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/VGA/Final Project 371/MouseDisplay.vhd:214]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/VGA/Final Project 371/MouseDisplay.vhd:213]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/VGA/Final Project 371/MouseDisplay.vhd:214]
+INFO: [Synth 8-5547] Trying to map ROM "OVERLAY_RAM1" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "OVERLAY_RAM2" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "OVERLAY_RAM3" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "OVERLAY_RAM4" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "OVERLAY_RAM5" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element addr_cntr_reg_reg was removed.  [E:/OverlayCtl.vhd:1126]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:641]
+WARNING: [Synth 8-6014] Unused sequential element h_cntr_reg_reg was removed.  [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:763]
+WARNING: [Synth 8-6014] Unused sequential element v_cntr_reg_reg was removed.  [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:764]
+WARNING: [Synth 8-6014] Unused sequential element cntDyn_reg was removed.  [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:1107]
+WARNING: [Synth 8-6014] Unused sequential element counter_out_reg was removed.  [E:/VGA/Final Project 371/debounce.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element count_idle_reg was removed.  [E:/VGA/Final Project 371/ps2keyboardXYCoords.vhd:93]
+INFO: [Synth 8-5545] ROM "Y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/VGA/Final Project 371/ConverterXY.vhd:20]
+WARNING: [Synth 8-327] inferring latch for variable 'score_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:725]
+WARNING: [Synth 8-327] inferring latch for variable 'C1enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:614]
+WARNING: [Synth 8-327] inferring latch for variable 'C2enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:617]
+WARNING: [Synth 8-327] inferring latch for variable 'C3enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:620]
+WARNING: [Synth 8-327] inferring latch for variable 'C4enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:623]
+WARNING: [Synth 8-327] inferring latch for variable 'C5enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:626]
+WARNING: [Synth 8-327] inferring latch for variable 'C6enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:629]
+WARNING: [Synth 8-327] inferring latch for variable 'C7enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:632]
+WARNING: [Synth 8-327] inferring latch for variable 'C8enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:635]
+WARNING: [Synth 8-327] inferring latch for variable 'C9enable_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:638]
+WARNING: [Synth 8-327] inferring latch for variable 'scre_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:687]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt1_reg' [E:/VGA/Final Project 371/VgaForMouseOnly.vhd:646]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:17 ; elapsed = 00:07:19 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 18    
+	   3 Input      4 Bit       Adders := 2     
+	  10 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 5     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                4 Bit    Registers := 60    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module WhiteBox 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module CoinDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CoinDisplay9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MouseDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module OverlayCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module Vgaformouseonly 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
+	  10 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 4     
+	                4 Bit    Registers := 39    
+	                1 Bit    Registers := 16    
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module ps2keyboard 
+Detailed RTL Component Info : 
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module FinalConverter2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/Inst_WB/\mousepixel_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/MOUSE_X_POS_REG_reg[11]' (FDE) to 'Inst_VGA/MOUSE_Y_POS_REG_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/MOUSE_Y_POS_REG_reg[10]' (FDE) to 'Inst_VGA/MOUSE_Y_POS_REG_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\MOUSE_Y_POS_REG_reg[11] )
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_9/green_out9_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_9/green_out9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_8/green_out8_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_8/green_out8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_7/green_out7_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_7/green_out7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_6/green_out6_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_6/green_out6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_5/green_out5_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_5/green_out5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_4/green_out4_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_4/green_out4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_3/green_out3_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_3/green_out3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_2/green_out2_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_2/green_out2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_1/green_out_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_1/green_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_MouseDisplay/green_out_reg[0]' (FDRE) to 'Inst_VGA/Inst_MouseDisplay/green_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_9/green_out9_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_9/green_out9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_8/green_out8_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_8/green_out8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_7/green_out7_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_7/green_out7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_6/green_out6_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_6/green_out6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_5/green_out5_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_5/green_out5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_4/green_out4_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_4/green_out4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_3/green_out3_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_3/green_out3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_2/green_out2_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_2/green_out2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_1/green_out_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_1/green_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_MouseDisplay/green_out_reg[1]' (FDRE) to 'Inst_VGA/Inst_MouseDisplay/green_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_9/green_out9_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_9/green_out9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_8/green_out8_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_8/green_out8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_7/green_out7_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_7/green_out7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_6/green_out6_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_6/green_out6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_5/green_out5_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_5/green_out5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_4/green_out4_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_4/green_out4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_3/green_out3_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_3/green_out3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_2/green_out2_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_2/green_out2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_1/green_out_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_1/green_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_MouseDisplay/green_out_reg[2]' (FDRE) to 'Inst_VGA/Inst_MouseDisplay/green_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/Inst_MouseDisplay/\green_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_WB/red_outWB_reg[0]' (FDSE) to 'Inst_VGA/Inst_WB/red_outWB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_9/red_out9_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_9/red_out9_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_8/red_out8_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_8/red_out8_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_7/red_out7_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_7/red_out7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_6/red_out6_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_6/red_out6_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_5/red_out5_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_5/red_out5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_4/red_out4_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_4/red_out4_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_3/red_out3_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_3/red_out3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_2/red_out2_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_2/red_out2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_1/red_out_reg[0]' (FDSE) to 'Inst_VGA/Inst_Coin_1/red_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_MouseDisplay/red_out_reg[0]' (FDSE) to 'Inst_VGA/Inst_MouseDisplay/red_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_WB/red_outWB_reg[1]' (FDSE) to 'Inst_VGA/Inst_WB/red_outWB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_9/red_out9_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_9/red_out9_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_8/red_out8_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_8/red_out8_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_7/red_out7_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_7/red_out7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_6/red_out6_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_6/red_out6_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_5/red_out5_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_5/red_out5_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_4/red_out4_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_4/red_out4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_3/red_out3_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_3/red_out3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_2/red_out2_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_2/red_out2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_1/red_out_reg[1]' (FDSE) to 'Inst_VGA/Inst_Coin_1/red_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_MouseDisplay/red_out_reg[1]' (FDSE) to 'Inst_VGA/Inst_MouseDisplay/red_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_WB/red_outWB_reg[2]' (FDSE) to 'Inst_VGA/Inst_WB/red_outWB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_9/red_out9_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_9/red_out9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_8/red_out8_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_8/red_out8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_7/red_out7_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_7/red_out7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_6/red_out6_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_6/red_out6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_5/red_out5_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_5/red_out5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_4/red_out4_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_4/red_out4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_3/red_out3_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_3/red_out3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_2/red_out2_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_2/red_out2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_Coin_1/red_out_reg[2]' (FDSE) to 'Inst_VGA/Inst_Coin_1/red_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/Inst_MouseDisplay/red_out_reg[2]' (FDSE) to 'Inst_VGA/Inst_MouseDisplay/red_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C1enable_reg[1]' (LDC) to 'Inst_VGA/C1enable_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C4enable_reg[1]' (LDC) to 'Inst_VGA/C4enable_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C2enable_reg[1]' (LDC) to 'Inst_VGA/C2enable_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C3enable_reg[1]' (LDC) to 'Inst_VGA/C3enable_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C7enable_reg[3]' (LDC) to 'Inst_VGA/C7enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C6enable_reg[3]' (LDC) to 'Inst_VGA/C6enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C5enable_reg[3]' (LDC) to 'Inst_VGA/C5enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C9enable_reg[3]' (LDC) to 'Inst_VGA/C9enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C8enable_reg[3]' (LDC) to 'Inst_VGA/C8enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C1enable_reg[3]' (LDC) to 'Inst_VGA/C1enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C4enable_reg[3]' (LDC) to 'Inst_VGA/C4enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C3enable_reg[3]' (LDC) to 'Inst_VGA/C3enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C2enable_reg[3]' (LDC) to 'Inst_VGA/C2enable_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C7enable_reg[2]' (LDC) to 'Inst_VGA/C7enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C6enable_reg[2]' (LDC) to 'Inst_VGA/C6enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C5enable_reg[2]' (LDC) to 'Inst_VGA/C5enable_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C1enable_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C9enable_reg[2]' (LDC) to 'Inst_VGA/C9enable_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/C8enable_reg[2]' (LDC) to 'Inst_VGA/C8enable_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C7enable_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C5enable_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C6enable_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C4enable_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C3enable_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C2enable_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C8enable_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\C9enable_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/WB_g1_dly_reg[0]' (FD) to 'Inst_VGA/WB_b1_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g9_dly_reg[0]' (FD) to 'Inst_VGA/coin_b9_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g8_dly_reg[0]' (FD) to 'Inst_VGA/coin_b8_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g7_dly_reg[0]' (FD) to 'Inst_VGA/coin_b7_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g6_dly_reg[0]' (FD) to 'Inst_VGA/coin_b6_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g5_dly_reg[0]' (FD) to 'Inst_VGA/coin_b5_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g4_dly_reg[0]' (FD) to 'Inst_VGA/coin_b4_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g3_dly_reg[0]' (FD) to 'Inst_VGA/coin_b3_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g2_dly_reg[0]' (FD) to 'Inst_VGA/coin_b2_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g1_dly_reg[0]' (FD) to 'Inst_VGA/coin_b1_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/mouse_cursor_green_dly_reg[0]' (FD) to 'Inst_VGA/mouse_cursor_blue_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/WB_g1_dly_reg[1]' (FD) to 'Inst_VGA/WB_b1_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g9_dly_reg[1]' (FD) to 'Inst_VGA/coin_b9_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g8_dly_reg[1]' (FD) to 'Inst_VGA/coin_b8_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g7_dly_reg[1]' (FD) to 'Inst_VGA/coin_b7_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g6_dly_reg[1]' (FD) to 'Inst_VGA/coin_b6_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Inst_VGA/coin_g5_dly_reg[1]' (FD) to 'Inst_VGA/coin_b5_dly_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_VGA/\mouse_cursor_blue_dly_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (mousepixel_reg[1]) is unused and will be removed from module WhiteBox.
+WARNING: [Synth 8-3332] Sequential element (green_out_reg[3]) is unused and will be removed from module MouseDisplay.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[20]) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[19]) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[18]) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[20]__0) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[19]__0) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[18]__0) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[20]__1) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[19]__1) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[18]__1) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[20]__2) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[19]__2) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[18]__2) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[20]__3) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[19]__3) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (addr_cntr_reg_reg_rep[18]__3) is unused and will be removed from module OverlayCtl.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[9]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[8]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[7]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[6]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[5]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[4]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[3]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (v_cntr_reg_dly_reg[0]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[7]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[6]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[5]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[4]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[3]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[0]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C1enable_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C2enable_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C3enable_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C4enable_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C5enable_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C6enable_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C7enable_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C8enable_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (C9enable_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (MOUSE_Y_POS_REG_reg[11]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (mouse_cursor_blue_dly_reg[3]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (score_reg[3]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (score_reg[2]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (score_reg[1]) is unused and will be removed from module Vgaformouseonly.
+WARNING: [Synth 8-3332] Sequential element (score_reg[0]) is unused and will be removed from module Vgaformouseonly.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:24 ; elapsed = 00:07:38 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-------------+---------------+----------------+
+|Module Name  | RTL Object  | Depth x Width | Implemented As | 
++-------------+-------------+---------------+----------------+
+|CoinDisplay  | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay2 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay3 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay4 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay5 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay6 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay7 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay8 | mouserom[0] | 256x2         | LUT            | 
+|CoinDisplay9 | mouserom[0] | 256x2         | LUT            | 
+|MouseDisplay | mouserom[0] | 256x2         | LUT            | 
+|OverlayCtl   | p_0_out     | 262144x1      | LUT            | 
+|OverlayCtl   | p_0_out     | 262144x1      | LUT            | 
+|OverlayCtl   | p_0_out     | 262144x1      | LUT            | 
+|OverlayCtl   | p_0_out     | 262144x1      | LUT            | 
+|OverlayCtl   | p_0_out     | 262144x1      | LUT            | 
++-------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Inst_ClkGen/clk_100MHz_o' to pin 'Inst_ClkGen/bbstub_clk_100MHz_o/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Inst_ClkGen/clk_200MHz_o' to pin 'Inst_ClkGen/bbstub_clk_200MHz_o/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Inst_VGA/Inst_PxlClkGen/CLK_OUT1' to pin 'Inst_VGA/Inst_PxlClkGen/bbstub_CLK_OUT1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'Inst_VGA/Inst_PxlClkGen/CLK_IN1' to 'Inst_VGA/i_2/cnt_reg[31]/C'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:40 ; elapsed = 00:07:55 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:43 ; elapsed = 00:07:58 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:43 ; elapsed = 00:08:00 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:44 ; elapsed = 00:08:01 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:44 ; elapsed = 00:08:01 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |PxlClkGen     |         1|
+|2     |ClkGen        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |ClkGen_bbox    |     1|
+|2     |PxlClkGen_bbox |     1|
+|3     |BUFG           |     1|
+|4     |CARRY4         |    96|
+|5     |LUT1           |   246|
+|6     |LUT2           |   145|
+|7     |LUT3           |   137|
+|8     |LUT4           |   112|
+|9     |LUT5           |    65|
+|10    |LUT6           |   316|
+|11    |MUXF7          |    22|
+|12    |MUXF8          |    11|
+|13    |FDCE           |    32|
+|14    |FDRE           |   415|
+|15    |LD             |    36|
+|16    |LDC            |     9|
+|17    |IBUF           |     3|
+|18    |OBUF           |    50|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------+------+
+|      |Instance              |Module          |Cells |
++------+----------------------+----------------+------+
+|1     |top                   |                |  1701|
+|2     |  Inst_VGA            |Vgaformouseonly |  1347|
+|3     |    Inst_WB           |WhiteBox        |    15|
+|4     |    Inst_Coin_1       |CoinDisplay     |    34|
+|5     |    Inst_Coin_2       |CoinDisplay2    |    33|
+|6     |    Inst_Coin_3       |CoinDisplay3    |    29|
+|7     |    Inst_Coin_4       |CoinDisplay4    |    30|
+|8     |    Inst_Coin_5       |CoinDisplay5    |    29|
+|9     |    Inst_Coin_6       |CoinDisplay6    |    30|
+|10    |    Inst_Coin_7       |CoinDisplay7    |    27|
+|11    |    Inst_Coin_8       |CoinDisplay8    |    33|
+|12    |    Inst_Coin_9       |CoinDisplay9    |    31|
+|13    |    Inst_MouseDisplay |MouseDisplay    |   119|
+|14    |    Inst_OverlayCtrl  |OverlayCtl      |   317|
+|15    |  ScoreDisp           |Score_Display   |     7|
+|16    |  UUT1                |ps2keyboard     |   110|
+|17    |    debounce_ps2_clk  |debounce__1     |    25|
+|18    |    debounce_ps2_data |debounce        |    25|
+|19    |  UUT2                |FinalConverter2 |   180|
++------+----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:44 ; elapsed = 00:08:02 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:16 ; elapsed = 00:07:38 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+Synthesis Optimization Complete : Time (s): cpu = 00:05:44 ; elapsed = 00:08:02 . Memory (MB): peak = 2561.719 ; gain = 2277.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 45 instances were transformed.
+  LD => LDCE: 36 instances
+  LDC => LDCE: 9 instances
+
+219 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:46 ; elapsed = 00:08:14 . Memory (MB): peak = 2561.719 ; gain = 2281.836
+INFO: [Common 17-1381] The checkpoint 'E:/VGA/Final Project 371/Week12Demo.runs/synth_1/Nexys4DdrUserDemo_optimizedAbdallah.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2561.719 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2561.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 18:37:38 2017...
